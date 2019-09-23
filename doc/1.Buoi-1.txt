@@ -1,0 +1,48 @@
+1. Tai sao lam real time web app thi ng ta dung nodejs:
+non-blocking io
+
+2. Tim hieu multi-thread, concurency, paralel, context-switching.
+
+3. Khai bao bien khong can khai bao kieu nhung doc van hieu. Lam the nao?
+
+4. Built-in package(file system and crypto), built-in object (vd: Math.sqrt()), built-in function de tuong tac voi he dieu hanh.
+
+5. html dom and ? xml dom. 
+
+6. Express.js (web api, server rendering, middleware) va hapi.js () // khac nhau ve cach tiep can
+
+7. https://blogchanhday.com/p/javascript-tong-quan-ve-engine-runtime-call-stack-va-event-loop/
+Doc ve event loop.
+
+8. Language Rust, scala - it's hard to learn.
+
+9. Object literal, Array literal, function literal.
+String literal use single quote.
+
+10. short keyboard comandline \ to break line
+
+11. function: 
+
+12. method: la function cua class. class gom property va method.
+
+// Khai bao function:
+function func() {};
+
+let x = function () {}; // function Expression or anonymous function
+
+let y = () => {}; // arrow function or lambda function
+
+this: là đại diện cho cái đối tượng gọi function.
+
+a.func();
+b.func();
+
+this đại diện cho a và b khi func() được gọi.
+
+13. function map co 3 kiểu thực thi =>  tìm hiểu.
+
+14. JSON.stringtify and regular expression ko nên dùng.
+
+15.
+
+Khong su dung == va != vi nó sẽ convert kiểu dữ liệu trước khi so sánh.
