@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  },
+  "name": "eslint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nancyast/nodejs-learning.git",
+  "license": "MIT"
+}
