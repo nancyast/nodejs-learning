@@ -28,12 +28,10 @@ const students = [
 ];
 
 const { male, female } = students.reduce(
-  (acc, student) => {
-    return {
-      ...acc,
-      [student.gender]: acc[student.gender] + 1,
-    };
-  },
+  (acc, student) => ({
+    ...acc,
+    [student.gender]: acc[student.gender] + 1,
+  }),
   { male: 0, female: 0 },
 );
 
