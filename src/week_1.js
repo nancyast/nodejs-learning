@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 // 1. Using ES6, count the number of male students and female students and output the results with console.log.
 const students = [
   {
@@ -38,7 +40,10 @@ const countByKey = (array, key) => {
   }, {});
 };
 
-const result = countByKey(students, 'name');
+// const result = countByKey(students, 'name');
+const result = _.chain(students)
+  .countBy('gender')
+  .value();
 console.log('result ', result);
 
 // 2. Using ES6, convert the students array to new array with just the names.
