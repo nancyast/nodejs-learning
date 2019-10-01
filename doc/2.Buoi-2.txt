@@ -1,0 +1,16 @@
+1. Dùng typescript trong project thì những package trong
+ dependency phải kèm 1 package tương ứng có type trong devDependency.
+
+ 2. Tránh code như vầy
+
+ Khai báo let result = {};
+ for(let i = 0; ....) {
+   // update result
+ }
+ Sử dung result;
+
+ tránh khai báo những biến để xử lý như vậy
+
+ 3. Procedure proggramming ==> tìm hiểu.
+
+ 4. JSON là text được format theo kiểu Javascript Object.

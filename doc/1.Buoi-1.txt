@@ -43,6 +43,4 @@ this đại diện cho a và b khi func() được gọi.
 
 14. JSON.stringtify and regular expression ko nên dùng.
 
-15.
-
-Khong su dung == va != vi nó sẽ convert kiểu dữ liệu trước khi so sánh.
+15. Khong su dung == va != vi nó sẽ convert kiểu dữ liệu trước khi so sánh.

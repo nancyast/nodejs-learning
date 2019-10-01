@@ -1,0 +1,27 @@
+1. webpack minify để giảm dung lượng file để send qua internet.
+tool tương tự: javascript  Obfrushcator
+
+2.  Chưa học: this và closure.
+
+3. Performance của dự án OOP chậm hơn Procedure proggramming và functional proggramming.
+
+4. Node REPL: gõ code trên commandline, khi nodejs chay chế độ này thì không có event loop.
+
+5. >node ( chạy chương trình node đã setup variable enviroment PATH="" trong file bash.) với tham số đầu vào...
+> node index.js (chay file ở thư mục hiện hành)
+
+6. Module là từ trong nodejs thôi.
+Đúng bản chât của nó là dependency. Vì nó yêu cầu thông tin ở file khác.
+Đối với nodejs thì mỗi file là module.
+
+7. Export ---> export ra immutbable object.
+
+8. Build-in Promise cua Nodejs co performance cham hon bluebird.
+Nen xai thu vien rieng async await se co performance tot hon.
+
+9. Cách đánh version package.
+
+10. Cách viết scripts:
+&& : xong lệnh này mới chạy lệnh khác.
+
+11. Sử dụng export default thay vì export.
