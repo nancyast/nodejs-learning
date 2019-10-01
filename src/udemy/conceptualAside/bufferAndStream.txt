@@ -1,0 +1,4 @@
+- Buffer: a temporary holding spot for data being move from one place to another. It is limited in size.
+The buffer is simply to allow us gather some data and move it along.
+
+- Stream: a sequence of data made available over time.
