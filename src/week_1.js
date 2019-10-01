@@ -27,15 +27,19 @@ const students = [
   },
 ];
 
-const { male, female } = students.reduce(
-  (acc, student) => ({
-    ...acc,
-    [student.gender]: acc[student.gender] + 1,
-  }),
-  { male: 0, female: 0 },
-);
+const countByKey = (array, key) => {
+  return array.reduce((acc, object) => {
+    return key in object
+      ? {
+          ...acc,
+          [object[key]]: (acc[object[key]] || 0) + 1,
+        }
+      : acc;
+  }, {});
+};
 
-console.log('male ', male, 'female ', female);
+const result = countByKey(students, 'name');
+console.log('result ', result);
 
 // 2. Using ES6, convert the students array to new array with just the names.
 const names = students.map(s => s.name);
