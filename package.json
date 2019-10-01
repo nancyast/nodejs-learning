@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "date-fns": "^2.4.1",
+    "lodash": "^4.17.15",
     "prompts": "^2.2.1",
     "xlsx": "^0.15.1"
   }
