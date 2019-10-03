@@ -20,7 +20,6 @@ fs.readFile(path.join(__dirname, '/utils/product.json'), 'utf8', function(err, d
     });
 
     const worksheet = XLSX.utils.json_to_sheet(updatedProducts);
-
     worksheet['!cols'] = [{ width: 15 }, { width: 30 }, { width: 20 }, { width: 20 }, { width: 20 }];
 
     const workbook = XLSX.utils.book_new();
