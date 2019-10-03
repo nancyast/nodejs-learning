@@ -1,0 +1,36 @@
+1. Có thể Dùng babel -ưatch thay cho nodemon.
+Node hiện tại hỗ trợ async await chứ chưa hỗ trợ import
+
+2. process.nextTick(callback) không đẩy callback vào event loop, để xử lý callback trước khi event loop được tạo.
+==> tìm hiểu thêm.
+
+3. http module, request, fetch, axios.
+
+4. fetch trên browser(window.fetch) khác với fetch trong nodejs( node-fetch )
+
+5. path:
+để lấy đường dẫn tuyệt đối
+
+path.join(__dirname, 'filename');
+
+6. Best practise cho callback(err, data) {
+  // err truoc, data sau
+}
+
+7. Moi truong browser : 
+
+8. Hình ảnh dạng binary data thì encode dạng base64 rồi lưu vào database.
+
+9. Thường template dẽ đâỷ vào 1 chỗ CDN quản lý.
+
+10. Chạy lệnh node:
+[env] node [Option] file [argument]
+
+config thread pool
+
+-- tên đầy đủ (2 gạch)
+- viết tắt (1 gạch)
+
+11. Biến môi trường
+
+12. exec, force 

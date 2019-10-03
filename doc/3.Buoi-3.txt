@@ -1,7 +1,7 @@
 1. webpack minify để giảm dung lượng file để send qua internet.
 tool tương tự: javascript  Obfrushcator
 
-2.  Chưa học: this và closure.
+2. Chưa học: this và closure.
 
 3. Performance của dự án OOP chậm hơn Procedure proggramming và functional proggramming.
 
