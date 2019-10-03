@@ -1,9 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 const format = require('date-fns').format;
 const XLSX = require('xlsx');
 
 // Use fs.readFile() to read the products.json file and convert it to JS object.
-fs.readFile(__dirname + '/utils/product.json', 'utf8', function(err, data) {
+fs.readFile(path.join(__dirname, '/utils/product.json'), 'utf8', function(err, data) {
   if (!err) {
     const products = JSON.parse(data.toString());
 
@@ -27,6 +28,6 @@ fs.readFile(__dirname + '/utils/product.json', 'utf8', function(err, data) {
 
     const buf = XLSX.write(workbook, { type: 'buffer', bookType: 'xlsx' });
 
-    fs.writeFile(__dirname + '/utils/product.xlsx', buf, err => console.log(err));
+    fs.writeFile(path.join(__dirname, '/utils/product.xlsx'), buf, err => console.log(err));
   }
 });

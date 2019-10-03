@@ -1,9 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 const formatDistance = require('date-fns/formatDistance');
 const viLocale = require('date-fns/locale/vi');
 
 // Use fs.readFile() to read the products.json file and convert it to JS object.
-fs.readFile(__dirname + '/utils/product.json', 'utf8', function(err, data) {
+fs.readFile(path.join(__dirname, '/utils/product.json'), 'utf8', function(err, data) {
   if (!err) {
     const products = JSON.parse(data.toString());
 
