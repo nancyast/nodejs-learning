@@ -10,7 +10,7 @@ fetch(url)
   .then(data => {
     console.log(chalk.yellow(data.contents.quotes[0].quote));
   })
-  .catch(console.log);
+  .catch(console.error);
 
 // The first line tells the program loader to parse this file with NodeJS.
 // The rest of the file is just normal JavaScript.
