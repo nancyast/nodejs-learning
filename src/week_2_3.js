@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const format = require('date-fns').format;
+// const format = require('date-fns').format;
 const XLSX = require('xlsx');
+const moment = require('moment');
 
 // Use fs.readFile() to read the products.json file and convert it to JS object.
 fs.readFile(path.join(__dirname, '/utils/product.json'), 'utf8', function(err, data) {
@@ -15,7 +16,8 @@ fs.readFile(path.join(__dirname, '/utils/product.json'), 'utf8', function(err, d
   // Delete dateUpdated field
   const updatedProducts = products.map(p => {
     const { dateUpdated, ...product } = p;
-    const updated = format(new Date(dateUpdated), 'MM/dd/yyyy');
+    // const updated = format(new Date(dateUpdated), 'MM/dd/yyyy');
+    const updated = moment(new Date(dateUpdated)).format('MM/DD/YYYY');
     return {
       ...product,
       updated,
