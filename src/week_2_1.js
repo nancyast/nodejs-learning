@@ -17,11 +17,11 @@ const prompt = question => {
 };
 
 const main = () => {
-  const questions = [`What's your name?`, `What's your year of birth?`, `What's your home town?`];
+  const questions = [`What's your name? `, `What's your year of birth? `, `What's your home town? `];
 
-  prompt(questions[0] + ' ').then(name => {
-    prompt(questions[1] + ' ').then(birthday => {
-      prompt(questions[2] + ' ').then(hometown => {
+  prompt(questions[0]).then(name => {
+    prompt(questions[1]).then(birthday => {
+      prompt(questions[2]).then(hometown => {
         const date = new Date();
         const greet = `Thank you. Hello ${chalk.red(name)}, so you are ${chalk.yellow(
           date.getFullYear() - Number(birthday),
