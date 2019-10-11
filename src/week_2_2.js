@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const formatDistance = require('date-fns/formatDistance');
-const viLocale = require('date-fns/locale/vi');
+// const formatDistance = require('date-fns/formatDistance');
+// const viLocale = require('date-fns/locale/vi');
+const moment = require('moment');
 
 // Use fs.readFile() to read the products.json file and convert it to JS object.
 fs.readFile(path.join(__dirname, '/utils/product.json'), 'utf8', function(err, data) {
@@ -34,5 +35,15 @@ const formatMoney = money => {
 };
 
 const distanceFromNow = dateUpdated => {
-  return formatDistance(new Date(dateUpdated), new Date(), { locale: viLocale });
+  const x = moment(new Date(dateUpdated));
+  const y = moment(new Date());
+
+  return moment
+    .duration(y.diff(x))
+    .locale('vi')
+    .humanize();
 };
+
+// const distanceFromNow = dateUpdated => {
+//   return formatDistance(new Date(dateUpdated), new Date(), { locale: viLocale });
+// };
