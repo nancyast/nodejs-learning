@@ -1,0 +1,69 @@
+Cac middleware hay xai:
+- static file
+- body parser
+- cookie 
+  + luu o client 
+  + luu o server
+- jwt
+
+middleware cho body:
+body-parser
+app.use(bodyParser.json());
+app.use();
+
+app.get('/', (req, res) => {
+
+})
+
+x-www-form-urlencoded
+
+express.session
+
+app.use(express....);
+
+middleware(res, req, next) {
+  {
+    // code luon dung
+  }
+  catch() {
+    xu ly loi 
+    + bang function
+    + bang data
+    next(err);
+  }
+}
+
+const validatesss = () => {
+
+}
+
++ status: luon la 200 khi error (lam internal thoi)
++ body: 300 va message tuong ung. (fb va uber)
+
+throw new Error object thay vi object
+
+express --hbs 
+
+
+app.set('xxx', 500);
+console.log(app.get('xxx')); // pay more attention 
+
+app.get('/', (req, res) => {
+  res.render();
+})
+
+grateful shutdown
+
+process.exit(1) 
+PM2 bat process error nay.
+
+middleware multer.
+
+nói về log trong nodejs.
+
+isomorphic web sử dụng server-rendering và spa application.
+
+an introduction to isomorphic 
+
++ invalid hash
++ 

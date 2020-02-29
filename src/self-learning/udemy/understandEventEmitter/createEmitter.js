@@ -1,4 +1,4 @@
-let Emitter = require('./emitter.js');
+let Emitter = require('./emitter.js.js');
 
 let emtr = new Emitter();
 

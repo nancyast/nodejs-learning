@@ -1,5 +1,3 @@
-const _ = require('lodash');
-
 // 1. Using ES6, count the number of male students and female students and output the results with console.log.
 const students = [
   {

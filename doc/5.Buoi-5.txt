@@ -1,0 +1,4 @@
+1. Http request:
+  - path, method, header (luu thong tin meta data), body ()
+2. Http response:
+  - status, data, header. ( cookie là để lưu lại thông tin user)
