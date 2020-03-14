@@ -45,3 +45,5 @@ console.log('result ', result);
 const names = students.map(s => s.name);
 
 console.log('names', names);
+
+console.log('process.env ', process.env);

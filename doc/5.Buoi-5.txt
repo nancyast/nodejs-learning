@@ -2,3 +2,11 @@
   - path, method, header (luu thong tin meta data), body ()
 2. Http response:
   - status, data, header. ( cookie là để lưu lại thông tin user)
+
+3.
+http 1.0 
+http 2.0 cho phep truyen du lieu song song cung luc nhờ mở nhiều kết nối cùng lúc.
+
+4. hash tag trong font end la gi, hash tag trong cai url.
+
+5. http header, http status.

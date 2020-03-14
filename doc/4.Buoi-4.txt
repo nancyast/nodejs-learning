@@ -34,3 +34,21 @@ config thread pool
 11. Biến môi trường
 
 12. exec, force 
+
+13. Sharp xử lý ảnh png, jpec.
+
+14. Binary =>(encoder)=> file text, ảnh, video =>(decoder)=> binary.
+
+15. base64
+
+16. base32
+
+17. base16
+
+18. base10 ( hệ thập phân)
+
+19. base8 (hệ bát phân) thường stream.
+
+20. base2: số trong hệ nhi phân có dang 0x...( vd: 0x0000).
+
+21. home user, home directory, dot file

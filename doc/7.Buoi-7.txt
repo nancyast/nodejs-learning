@@ -1,5 +1,5 @@
 Cac middleware hay xai:
-- static file
+- static file: các file trong thư mục static sẽ đc serve với content-type được lấy từ phần mở rộng của file.
 - body parser
 - cookie 
   + luu o client 
@@ -9,7 +9,7 @@ Cac middleware hay xai:
 middleware cho body:
 body-parser
 app.use(bodyParser.json());
-app.use();
+app.use(); hứng tất cả các request.
 
 app.get('/', (req, res) => {
 
@@ -22,6 +22,7 @@ express.session
 app.use(express....);
 
 middleware(res, req, next) {
+  try
   {
     // code luon dung
   }
@@ -67,3 +68,6 @@ an introduction to isomorphic
 
 + invalid hash
 + 
+
+
+http stateless,
